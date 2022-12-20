@@ -27,11 +27,11 @@ header {
   justify-content: center;
   text-align: center;
   gap: 0.5rem;
-  line-height: 1.5;
 }
 
-.logo{
-    height: 120px;
+.logo {
+  height: 80px;
+  width: auto;
 }
 
 h2 {
@@ -71,7 +71,7 @@ input {
   height: 48px;
   border: none;
   border-radius: 4px;
-  padding-inline-start: 0.5rem;
+  padding-inline-start: 1rem;
 }
 
 input:focus {
@@ -94,7 +94,7 @@ input:focus {
 }
 
 .checkbox-div label {
-  margin-left: 0.4rem;
+  margin-left: 0.6rem;
   font-size: 16px;
 }
 
@@ -111,11 +111,11 @@ input:focus {
 }
 
 #submit:hover {
-  background: #7791C2;
+  background: #7791c2;
 }
 
 footer {
-  margin-top: .5rem;
+  margin-top: 0.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -127,5 +127,37 @@ a {
 }
 
 a:hover {
-    color: #7791C2;
+  color: #7791c2;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
   }
+  .logo {
+    height: 60px;
+    width: auto;
+  }
+  header {
+    gap: 0;
+
+  }
+  form {
+    gap: 2rem;
+  }
+  .email-div{
+    margin-top: 2rem;
+  }
+  input {
+    width: 350px;
+    height: 48px;
+    padding-inline-start: 1.5rem;
+  }
+  .checkbox-div{
+    margin-top: 1rem;
+  }
+  .checkbox-div input {
+    height: 15px;
+    width: 15px;
+  }
+}
