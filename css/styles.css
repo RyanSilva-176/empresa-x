@@ -29,9 +29,9 @@ header {
   gap: 0.5rem;
 }
 
-.logo {
-  height: 80px;
-  width: auto;
+.logo{
+    height: 120px;
+    width: 120px;
 }
 
 h2 {
