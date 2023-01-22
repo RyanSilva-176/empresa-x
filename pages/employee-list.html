@@ -77,8 +77,16 @@
       </div>
       <div class="box-container">
         <div class="box">
+          <div id="msg-alert">
+            <h3>Deseja deletar o funcionário:</h3>
+            <span id="employee-name">USERNAME</span>
+            <div class="opt">
+              <a href="" id="opt-no" onclick="closeOpt()">NÃO</a>
+              <a href="#" id="opt-yes">SIM</a>
+            </div>
+          </div>
           <a href="#" class="fa-solid fa-pencil"></a>
-          <a href="#" class="fa-solid fa-trash"></a>
+          <a href="#" class="fa-solid fa-trash" onclick="msgAlert()"></a>
           <img src="../images/profile.jpg" alt="" />
           <h3 class="heading-md">Ryan Silva</h3>
           <h4 class="sub-heading">ryansilva123@gmail.com</h4>

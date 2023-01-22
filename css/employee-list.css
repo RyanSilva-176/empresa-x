@@ -269,6 +269,68 @@ header .container {
   border-radius: 50%;
 }
 
+.box #msg-alert {
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  position: absolute;
+  top: 30%;
+  left: 11%;
+  background: var(--black);
+  padding: 1.3rem;
+  border-radius: 4px;
+}
+
+.box #msg-alert h3 {
+  color: var(--light);
+  font-size: 1.5rem;
+}
+
+.box #msg-alert #employee-name {
+  color: var(--light);
+  background: var(--green);
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 4px;
+  width: max-content;
+  padding: 2px 8px;
+}
+
+.box #msg-alert .opt {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.box #msg-alert #opt-no {
+  color: var(--light);
+  background: #ae3e27;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  width: 40px;
+}
+
+.box #msg-alert #opt-no:hover{
+  background: #a45e50;
+}
+
+.box #msg-alert #opt-yes {
+  color: var(--light);
+  background: #02318f;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  width: 40px;
+}
+
+.box #msg-alert #opt-yes:hover{
+  background: #224486;
+}
+
 /* darkmode switch */
 
 .checkbox {
@@ -379,5 +441,11 @@ body.light {
   .accessibility {
     top: 70%;
     right: 2%;
+  }
+
+  .box #msg-alert {
+    top: 30%;
+    left: 25%;
+    visibility: visible;
   }
 }
